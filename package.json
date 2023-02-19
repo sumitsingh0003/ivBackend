@@ -4,6 +4,7 @@
   "description": "notebook - Your Notebook at the Cloud which you can use fron anywhere and access your data",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
