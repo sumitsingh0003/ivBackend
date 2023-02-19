@@ -35,7 +35,6 @@ router.post("/addnote", upload.single('Info[img]'), fetchuser,
   ],
   async (req, res) => {
     // console.log("req", req);
-
     try {
       // const { data } = req.body;
       const { subTotalData } = req.body;
