@@ -26,7 +26,6 @@ const upload = multer({
 
 
 
-
 // Route 1 :Add a new note using - Post "/api/notes/addnote" . Login Required
 router.post("/addnote", upload.single('Info[img]'), fetchuser,
   [

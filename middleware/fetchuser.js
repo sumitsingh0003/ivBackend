@@ -24,8 +24,6 @@
 
 
 
-
-
 var jwt = require("jsonwebtoken"); //Library for  using web token which we give to the user after login
 const JWT_SECRET = "JsonWebTokenSecret"; //
 
