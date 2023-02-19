@@ -76,7 +76,6 @@ router.post("/addnote", upload.single('Info[img]'), fetchuser,
 
 
 
-
 // Route 2 : Get All notes using - GET "/api/notes/fetchnotes" . Login Required
 router.get("/fetchnotes", fetchuser, async (req, res) => {
   try {
