@@ -9,4 +9,5 @@ const connectToMongo = () => {
   }).catch((e) => console.log(e));
 };
 
+
 module.exports = connectToMongo;
