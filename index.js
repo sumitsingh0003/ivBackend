@@ -14,7 +14,9 @@ app.use(express.json());
 app.use(express.static('public'));
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+// app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: 'https://effortless-dango-1eb22c.netlify.app/' }));
+
 
 
 const port = 4000;
