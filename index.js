@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 connectToMongo();
 const app = express();
 
+
 // app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
