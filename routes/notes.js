@@ -66,7 +66,7 @@ router.post("/addnote", upload.single('Info[img]'), fetchuser,
 
     } catch (error) {
       console.error(error.message);
-      res.status(500).send("Internal Server Error Occured");
+      res.status(500).send("Haha");
     }
   }
 );
