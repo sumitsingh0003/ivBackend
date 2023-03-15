@@ -73,6 +73,12 @@ const NotesSchema = new Schema({
       invoiceNoVal: {
         type: String,
       },
+      gst: {
+        type: String,
+      },
+      gstVal: {
+        type: String,
+      },
       invoiceDate: {
         type: String,
       },
@@ -103,6 +109,12 @@ const NotesSchema = new Schema({
       amount: {
         type: String,
       },
+      terms: {
+        type: String,
+      },
+      conditions: {
+        type: String,
+      }
     },
     items: [
       {

@@ -45,13 +45,13 @@ router.post("/addnote", upload.single('Info[img]'), fetchuser,
       const Info = { ...NewInfo, imgDataName };
       // getting data from res.body by destructuring
       // If there are errors , return bad errors and the errors
-      // console.log("req", req.body);
-      console.log("imgName", imgDataName);
+      console.log("req", req.body);
+      // console.log("imgName", imgDataName);
       // console.log("img", img);
       // console.log("url", url);
-      console.log("items", items);
-      console.log("Info", Info);
-      console.log("subTotalData", subTotalData);
+      // console.log("items", items);
+      // console.log("Info", Info);
+      // console.log("subTotalData", subTotalData);
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
