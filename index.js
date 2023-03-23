@@ -12,8 +12,8 @@ app.use(express.static('public'));
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 // app.use(cors({ credentials: true, origin: 'http://192.168.1.48:3000' }));
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
-// app.use(cors({ credentials: true, origin: 'https://invoice-generater.netlify.app' }));
+// app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: 'https://invoice-generater.netlify.app' }));
 // app.use(cors({ credentials: true, origin: 'http://192.168.43.98:3000' }));
 const port = 4000;
 
