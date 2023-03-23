@@ -51,7 +51,7 @@ router.post("/createuser", [
     };
 
     const authToken = jwt.sign(data, JWT_SECRET);
-    console.log(authToken);
+    // console.log(authToken);
     //Its a token which we send to the user after the authenticating.
     res.json({ success, authToken });
 

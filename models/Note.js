@@ -73,10 +73,10 @@ const NotesSchema = new Schema({
       invoiceNoVal: {
         type: String,
       },
-      gst: {
+      gstNo: {
         type: String,
       },
-      gstVal: {
+      togstNo: {
         type: String,
       },
       invoiceDate: {
@@ -114,6 +114,12 @@ const NotesSchema = new Schema({
       },
       conditions: {
         type: String,
+      },
+      note: {
+        type: String,
+      },
+      noteDescription: {
+        type: String,
       }
     },
     items: [
@@ -128,12 +134,6 @@ const NotesSchema = new Schema({
           type: String,
         },
         itemRate: {
-          type: String,
-        },
-        itemCgst: {
-          type: String,
-        },
-        itemSgst: {
           type: String,
         },
         itemAmount: {
@@ -166,6 +166,33 @@ const NotesSchema = new Schema({
       subTotalVal: {
         type: String,
       },
+      gst: {
+        type: String,
+      },
+      gstVal: {
+        type: String,
+      },
+      amountPaid: {
+        type: String,
+      },
+      amountPaidValue: {
+        type: String,
+      },
+      balanceDue: {
+        type: String,
+      },
+      balanceDueValue: {
+        type: String,
+      },
+      otherTaxType: {
+        type: Boolean,
+      },
+      discountType: {
+        type: Boolean,
+      },
+      serviceTaxType: {
+        type: Boolean,
+      }
     }
   },
   date: {
