@@ -40,7 +40,7 @@ router.post("/addnote", upload.single('Info[img]'), fetchuser,
       // const img = req.file.filename;
       const items = JSON.parse(req.body.items);
       const { imgName, ...NewInfo } = req.body.Info;
-      const url = req.protocol + '://' + req.get('host');
+      const url = req.protocol + 's://' + req.get('host');
       const imgDataName = url + "/images/" + req.file.filename;
       const Info = { ...NewInfo, imgDataName };
       // getting data from res.body by destructuring
