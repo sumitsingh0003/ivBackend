@@ -27,6 +27,7 @@
 var jwt = require("jsonwebtoken"); //Library for  using web token which we give to the user after login
 const JWT_SECRET = "JsonWebTokenSecret"; //
 
+
 const fetchuser = (req, res, next) => {
   // Get the user from the jwt token and add id to req object
   const token = req.header("auth-token");

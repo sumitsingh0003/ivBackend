@@ -49,12 +49,10 @@ router.post("/createuser", [
         id: user.id,
       },
     };
-
     const authToken = jwt.sign(data, JWT_SECRET);
     // console.log(authToken);
     //Its a token which we send to the user after the authenticating.
     res.json({ success, authToken });
-
     // console.log(user);
     // .catch(err => console.log(err));
     // res.json({error : 'Please enter a unique value for Email', message : err.message })

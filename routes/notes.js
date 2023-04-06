@@ -40,7 +40,7 @@ router.post("/addnote", upload.single('Info[img]'), fetchuser,
       // const img = req.file.filename;
       const items = JSON.parse(req.body.items);
       const { imgName, ...NewInfo } = req.body.Info;
-      const url = req.protocol + 's://' + req.get('host');
+      const url = req.protocol + '://' + req.get('host');
       const imgDataName = url + "/images/" + req.file.filename;
       const Info = { ...NewInfo, imgDataName };
       // getting data from res.body by destructuring
@@ -88,13 +88,6 @@ router.get("/fetchnotes", fetchuser, async (req, res) => {
   }
 });
 
-
-
-
-
-
-
-
 // Using put - Because when we update an existing thing we use put
 // Route 3 : Update an existing Note using - Put "/api/notes/updatenote" . Login Required
 router.put("/updatenote/:id", upload.single('Info[img]'), fetchuser, async (req, res) => {
@@ -104,7 +97,7 @@ router.put("/updatenote/:id", upload.single('Info[img]'), fetchuser, async (req,
     if (req.file?.filename) {
       const { imgName, ...NewInfo } = req.body.Info;
       const { subTotalData } = req.body;
-      const url = req.protocol + 's://' + req.get('host');
+      const url = req.protocol + '://' + req.get('host');
       const imgDataName = url + "/images/" + req.file.filename;
       const Info = { ...NewInfo, imgDataName };
       // return { subTotalData, Info };
