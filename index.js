@@ -16,6 +16,10 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(cors({ credentials: true, origin: ['http://localhost:3000', 'http://192.168.1.48:3000', 'https://make-invoice.netlify.app', 'http://192.168.43.98:3000'] }));
 // app.use(cors({ credentials: true, origin: 'http://192.168.43.98:3000' }));
 
+app.get("/", (req, res) => {
+  res.send('Api is Working');
+});
+
 //Available Routes
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/notes", require("./routes/notes"));
