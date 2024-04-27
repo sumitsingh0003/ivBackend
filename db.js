@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 // const mongoURI = "mongodb://localhost:27017/InvoiceDatabase";
-const mongoURI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.acl8nx3.mongodb.net/Iv-Maker?retryWrites=true&w=majority`;
+// const mongoURI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.acl8nx3.mongodb.net/Iv-Maker?retryWrites=true&w=majority`;
+const mongoURI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0.mlex81i.mongodb.net/Iv-Maker?retryWrites=true&w=majority`;
 
 mongoose.set('strictQuery', false);
 const connectToMongo = () => {
